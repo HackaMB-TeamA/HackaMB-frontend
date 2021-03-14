@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.main,
   },
   userInfos: {
-    height: height * 0.35,
+    paddingVertical: 10,
     alignItems: 'center',
     justifyContent: 'center',
   },

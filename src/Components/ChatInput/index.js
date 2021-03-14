@@ -7,13 +7,13 @@ import { styles } from './styles';
 import { colors } from './../../GlobalStyles';
 // const styles = {}
 
-const SearchBar = () => {
+const ChatInput = () => {
   const [ value, setValue ] = useState('');
   return (
     <View style={styles.container}>
       <View style={styles.box}>
         <TouchableOpacity>
-          <Ionicons name="search-sharp" color={colors.secondary} size={32} />
+          <Ionicons name="md-add" color={colors.secondary} size={32} />
         </TouchableOpacity>
 
           <TextInput
@@ -24,11 +24,11 @@ const SearchBar = () => {
           />
           
         <TouchableOpacity>
-          <Ionicons name="ios-funnel-sharp" color={colors.secondary} size={32} />
+          <Ionicons name="md-send-sharp" color={colors.secondary} size={32} />
         </TouchableOpacity>
       </View>
     </View>
   );
 };
 
-export default SearchBar;
+export default ChatInput;
