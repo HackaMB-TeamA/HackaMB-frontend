@@ -3,8 +3,8 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import Header from '../Components/Header';
-import { GlobalStyles } from '../GlobalStyles';
+import Header from '../../Components/Header';
+import { GlobalStyles } from '../../GlobalStyles';
 
 const HomeScreen = () => {
   return (

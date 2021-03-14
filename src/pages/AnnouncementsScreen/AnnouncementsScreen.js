@@ -3,8 +3,10 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import Header from '../Components/Header';
-import { GlobalStyles } from '../GlobalStyles';
+import Header from '../../Components/Header';
+import { GlobalStyles } from '../../GlobalStyles';
+
+import Announcments from '../../Components/Announcments/Announcments';
 
 const AnnouncementsScreen = () => {
   return (
@@ -12,6 +14,7 @@ const AnnouncementsScreen = () => {
       <Header title={'Config'} />
       <View style={GlobalStyles.container}>
         <Text> AnnouncementsScreen </Text>
+        <Announcments />
         <StatusBar style='light' />
       </View>
     </SafeAreaProvider>

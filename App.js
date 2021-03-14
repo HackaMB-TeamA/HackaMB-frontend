@@ -4,8 +4,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Ionicons from 'react-native-vector-icons/Ionicons'; //  remove
 
-import HomeScreen from './src/pages/HomeScreen';
-import AnnouncementsScreen from './src/pages/AnnouncementsScreen';
+import HomeScreen from './src/pages/HomeScreen/HomeScreen';
+import AnnouncementsScreen from './src/pages/AnnouncementsScreen/AnnouncementsScreen';
 import { colors } from './src/GlobalStyles';
 
 const App = () => {
