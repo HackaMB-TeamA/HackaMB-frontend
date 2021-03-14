@@ -1,12 +1,15 @@
-import React from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-import AnnouncementsScreen from '../pages/AnnouncementsScreen';
-import HomeScreen from '../pages/HomeScreen';
+import AnnouncementsScreen from '../pages/AnnouncementsScreen/AnnouncementsScreen';
+import HomeScreen from '../pages/HomeScreen/HomeScreen';
 import Profile from '../pages/Profile';
 import { colors } from '../GlobalStyles';
-import { ProfileStackNavigator, ConversationStackNavigator } from "./StackNavigator";
+import {
+  ProfileStackNavigator,
+  ConversationStackNavigator,
+} from './StackNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -27,21 +30,21 @@ const BottomTabNavigator = () => {
     >
       <Tab.Screen name='Home' component={HomeScreen} />
       <Tab.Screen name='Comunicados' component={AnnouncementsScreen} />
-      <Tab.Screen 
+      <Tab.Screen
         name='Conversations'
         component={ConversationStackNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="ios-chatbox-sharp" color={color} size={size} />
+            <Ionicons name='ios-chatbox-sharp' color={color} size={size} />
           ),
         }}
       />
-      <Tab.Screen 
-        name='Profile' 
+      <Tab.Screen
+        name='Profile'
         component={ProfileStackNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-sharp" color={color} size={size} />
+            <Ionicons name='person-sharp' color={color} size={size} />
           ),
         }}
       />
