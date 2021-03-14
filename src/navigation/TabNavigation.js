@@ -7,6 +7,7 @@ import HomeScreen from '../pages/HomeScreen';
 import Profile from '../pages/Profile';
 import { colors } from '../GlobalStyles';
 import { ProfileStackNavigator, ConversationStackNavigator } from "./StackNavigator";
+import BlanckPage from './../pages/BlanckPage';
 
 const Tab = createBottomTabNavigator();
 
@@ -25,8 +26,34 @@ const BottomTabNavigator = () => {
         showLabel: false,
       }}
     >
-      <Tab.Screen name='Home' component={HomeScreen} />
-      <Tab.Screen name='Comunicados' component={AnnouncementsScreen} />
+ 
+      <Tab.Screen 
+        name='Communicated'
+        component={BlanckPage}
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="ios-flag" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen 
+        name='Posts'
+        component={BlanckPage}
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="book-sharp" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen 
+        name='Home'
+        component={BlanckPage}
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="ios-home" color={color} size={size} />
+          ),
+        }}
+      />
       <Tab.Screen 
         name='Conversations'
         component={ConversationStackNavigator}

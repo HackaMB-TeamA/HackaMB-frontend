@@ -16,11 +16,44 @@ const Conversations = ({navigation}) => {
         <StatusBar style='light' />
         <SearchBar />
         
-        <TouchableOpacity style={styles.button}
-          onPress={() => navigation.navigate("Chat")}
-        >
-          <Text style={styles.buttonText} >Ir para chat</Text>
-        </TouchableOpacity>
+        <View style={styles.card}>
+          <Text style={styles.title}> Front end </Text>
+          <Text style={styles.description}> 
+            Um grupo para compartilhar contéudos de back 
+            end, mais um texto só para ter um overflow ... 
+          </Text>
+          
+          <TouchableOpacity style={styles.button}
+            onPress={() => navigation.navigate("Chat")}
+          >
+            <Text style={styles.buttonText} >Entrar</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.card}>
+          <Text style={styles.title}> Front end </Text>
+          <Text style={styles.description}> 
+            Um grupo para compartilhar contéudos de back 
+            end, mais um texto só para ter um overflow ... 
+          </Text>
+          <TouchableOpacity style={styles.button}
+            onPress={() => navigation.navigate("Chat")}
+          >
+            <Text style={styles.buttonText} >Entrar</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.title}> Front end </Text>
+          <Text style={styles.description}> 
+            Um grupo para compartilhar contéudos de back 
+            end, mais um texto só para ter um overflow ... 
+          </Text>
+          <TouchableOpacity style={styles.button}
+            onPress={() => navigation.navigate("Chat")}
+          >
+            <Text style={styles.buttonText} >Entrar</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaProvider>
   );
