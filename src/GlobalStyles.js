@@ -7,6 +7,15 @@ export const colors = {
   secondary: '#1A1B26',
   highlightYellow: '#fcba03',
   unfocusedGray: '#a8a8a8',
+  light: '#FFFF',
+};
+export const size = {
+  small: 12,
+  smallest: 14,
+  default: 16,
+  big: 18,
+  bigger: 20,
+  biggest: 24,
 };
 
 export const GlobalStyles = StyleSheet.create({
