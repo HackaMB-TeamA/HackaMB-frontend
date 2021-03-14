@@ -26,15 +26,10 @@ const BottomTabNavigator = () => {
         showLabel: false,
       }}
     >
-<<<<<<< HEAD
-      <Tab.Screen name='Home' component={HomeScreen} />
-      <Tab.Screen name='Comunicados' component={AnnouncementsScreen} />
-      <Tab.Screen
-=======
  
       <Tab.Screen 
         name='Communicated'
-        component={BlanckPage}
+        component={AnnouncementsScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="ios-flag" color={color} size={size} />
@@ -60,7 +55,6 @@ const BottomTabNavigator = () => {
         }}
       />
       <Tab.Screen 
->>>>>>> c70c7766862e7f3587512e64b7ba7fab610094cd
         name='Conversations'
         component={ConversationStackNavigator}
         options={{
