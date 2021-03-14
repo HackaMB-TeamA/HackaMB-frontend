@@ -3,12 +3,12 @@ import { View, Text, Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import { styles } from './styles';
-import Avatar from '../avatar/index';
+import Avatar from './../Avatar/index';
 
-const Message = ({ author, urlPicture, message, pastTime }) => {
+const Message = ({ author, urlPicture, message, pastTime}) => {
   return (
-    <View style={styles.container}>
-      <Avatar size={40}/>
+    <View style={{flexDirection: 'row', marginVertical: 10}}>
+      <Avatar size={45}/>
       <View style={styles.message}>
         <TouchableOpacity style={styles.container}>
           <Text style={styles.messageAuthor}>{author}</Text>
