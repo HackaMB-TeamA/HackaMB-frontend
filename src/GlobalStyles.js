@@ -7,7 +7,9 @@ export const colors = {
   secondary: '#1A1B26',
   highlightYellow: '#fcba03',
   unfocusedGray: '#a8a8a8',
-  light: '#FFFF',
+  light: '#C4C4C4',
+  lighter: '#E7E4E4',
+  lightest: '#FFF',
 };
 export const size = {
   small: 12,
@@ -20,9 +22,9 @@ export const size = {
 
 export const GlobalStyles = StyleSheet.create({
   container: {
+    paddingTop: height * 0.05,
+    paddingHorizontal: width * 0.03,
     flex: 1,
-    alignItems: 'center',
     backgroundColor: colors.main,
-    // justifyContent: 'center'
   },
 });

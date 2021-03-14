@@ -47,7 +47,7 @@ export const styles = StyleSheet.create({
   },
   titleSection: {
     fontSize: size.big,
-    color: colors.light,
+    color: colors.lightest,
   },
   button: {
     position: 'absolute',
@@ -57,7 +57,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: size.big,
-    color: colors.light,
+    color: colors.lightest,
   },
   buttonText: {
     fontSize: size.big,

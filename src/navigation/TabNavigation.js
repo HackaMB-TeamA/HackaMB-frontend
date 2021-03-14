@@ -6,7 +6,7 @@ import AnnouncementsScreen from '../pages/AnnouncementsScreen';
 import HomeScreen from '../pages/HomeScreen';
 import Profile from '../pages/Profile';
 import { colors } from '../GlobalStyles';
-import { ProfileStackNavigator } from "./StackNavigator";
+import { ProfileStackNavigator, ConversationStackNavigator } from "./StackNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -22,15 +22,24 @@ const BottomTabNavigator = () => {
         activeTintColor: colors.highlightYellow,
         inactiveTintColor: colors.unfocusedGray,
         style: { backgroundColor: colors.secondary },
+        showLabel: false,
       }}
     >
       <Tab.Screen name='Home' component={HomeScreen} />
       <Tab.Screen name='Comunicados' component={AnnouncementsScreen} />
       <Tab.Screen 
+        name='Conversations'
+        component={ConversationStackNavigator}
+        options={{
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="ios-chatbox-sharp" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen 
         name='Profile' 
         component={ProfileStackNavigator}
         options={{
-          tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="person-sharp" color={color} size={size} />
           ),
